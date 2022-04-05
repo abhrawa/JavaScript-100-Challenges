@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // function convertNumber(stringnum) {
+      //   if (!stringnum || isNaN(stringnum)) {
+      //     return 0;
+      //   }
+      //   return Math.floor(stringnum);
+      // }
+
+      // console.log(convertNumber("111"));
+
+      //   Method-2
+
+      //   function stringtoNum(stringnum) {
+      //     return !stringnum || isNaN(stringnum) ? 0 : parseInt(stringnum);
+      //   }
+      //   console.log(stringtoNum());
+
+      //  method- 3
+
+      // function stringtoNum(stringNum) {
+      //   var stringNum = parseInt(stringNum);
+      //   if (isNaN(stringNum)) {
+      //     return 0;
+      //   }
+      //   return stringNum;
+      // }
+      // console.log(stringtoNum("22842"));
+
+      let i;
+      for (i = 0; i < 30; i++) {
+        const log = () => {
+          console.log(i);
+        };
+        setTimeout(log, 100);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linkedin</title>
+  </head>
+  <body>
+    <script>
+      const obj = [
+        {
+          id: 1,
+          Name: "Arun",
+          arunconection: [
+            { id: 2, Name: "Rahul" },
+            {
+              id: 3,
+              Name: "Satish",
+            },
+          ],
+        },
+        {
+          id: 2,
+          Name: "Arun R",
+          Rahulconection: [
+            {
+              id: 1.2,
+              Name2: "Ajay",
+            },
+          ],
+        },
+        {
+          id: 3,
+          Name: "Satish",
+        },
+        {
+          id: 4,
+          Name: "Shunnu",
+        },
+      ];
+      function firstLevel(checkid) {
+        for (let i = 0; i <= obj.length; i++) {
+          if (obj[i].id === checkid) {
+            const { id, Name } = obj[i];
+            return `${Name} in ${id}`;
+          }
+        }
+      }
+      console.log(firstLevel(4));
+    </script>
+  </body>
+  <!-- const _profiles = {
+    id: "123",
+    name: "Ankit",
+    city: "Indore",
+    friends: {
+      "sanskrati-1234": {
+        id: "212",
+        name: "Sanskrati Agrawal",
+        friends: {
+          "aghaz-12": {},
+          "sagar-13": {},
+          "sudhanshu-13": {},
+        },
+      },
+      "aghaz-12": {},
+    },
+  }; -->
+</html>

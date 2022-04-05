@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Step-1 We will take the input.
+      // Step-2 If the remainder of year will be zero then it will return divisible of that year by 100.
+      // Step-3 Else divide the number by hundered and round up and return the value.
+      function solution(year) {
+        let x;
+        year % 100 === 0 ? `${(x = year / 100)}` : `${(x = year / 100 + 1)}`;
+        return Math.floor(x);
+      }
+
+      console.log(solution(1905));
+    </script>
+  </body>
+</html>

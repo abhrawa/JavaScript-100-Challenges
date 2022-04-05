@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function breakingPoint(breakPoint, arrSize) {
+        for (let current = 0; current < arrSize; current++) {
+          console.log(current);
+
+          if (current === breakPoint) {
+            return "Stop";
+          }
+        }
+      }
+      console.log(breakingPoint(5, 10)); //return store value here
+    </script>
+  </body>
+</html>

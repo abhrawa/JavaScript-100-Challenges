@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   const object = {
+      //     message: "Hello, World!",
+      //     getMessage() {
+      //       const message = "Hello, Earth!";
+      //       return this.message;
+      //     },
+      //   };
+      //   console.log(object.getMessage()); // What is logged?
+
+      //   const object = {
+      //     message: "Hello, World!",
+      //     getMessage: () => {
+      //       const message = "Hello, Earth!";
+      //       console.log(this);
+      //       return this.message;
+      //     },
+      //   };
+      //   console.log(object.getMessage()); // What is logged?
+
+      //   function Pet(name) {
+      //     this.name = name;
+
+      //     this.getName = function () {
+      //       console.log(this);
+      //       return this.name;
+      //     };
+      //   }
+      //   const cat = new Pet("Fluffy");
+      //   console.log(cat.getName()); // What is logged?
+      //   const { getName } = cat;
+      //   console.log(getName()); // What is logged?
+
+      //   const object = {
+      //     who: "World",
+      //     greet() {
+      //       return `Hello, ${this.who}!`;
+      //     },
+      //     farewell: () => {
+      //       return `Goodbye, ${this.who}!`;
+      //     },
+      //   };
+      //   const fun = object.farewell;
+      //   console.log(fun);
+      //   console.log(object.greet()); // What is logged?
+      //   console.log(object.farewell()); // What is logged?
+
+      //   function func(x) {
+      //     console.log(typeof x, arguments.length, arguments);
+      //   }
+      //   const func = (x) => {
+      //     console.log(typeof x, arguments.length);
+      //   };
+
+      //   func(); //==> ??
+      //   func(7); //==> ??
+      //   func("1", "2", "3"); //==> ??
+
+      //   const fn = (a, x, y, ...numbers) => {
+      //     console.log(x, y);
+      //   };
+
+      //   fn();
+
+      function greet() {
+        console.log(this._name);
+      }
+      greet.call({ _name: "Tom Cruise" });
+      greet.call({ _name: "Sagar" });
+      //   const sayHello2 = sayHello1.bind({ name: "Zac Efron" });
+      //   sayHello2();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   let a = 20;
+      //   var b = 40;
+      //   function zapak() {
+      //     a = 30;
+      //     return "10";
+      //   }
+      //   zapak();
+      //   console.log(a);
+      //   zapak();
+      //   console.log(b);
+
+      //   let a = 20;
+      //   function pak() {
+      //     var b = 40;
+      //     a = 30;
+      //     return "Abhishek";
+      //   }
+      //   console.log(a);
+      //   console.log(b);
+      //   console.log(pak());
+
+      //   let i;
+      //   for (i = 0; i < 3; i++) {
+      //     const log = () => {
+      //       console.log(i);
+      //     };
+      //     setTimeout(log, 100);
+      //   }
+
+      var text = "outside";
+      function logIt() {
+        console.log(text);
+        var text = "inside";
+        return "abhishek";
+      }
+      logIt();
+      console.log(text);
+
+      function muFun() {
+        let a = (b = c = d = e = 30);
+        var c = (d = 2);
+        const e = 3;
+      }
+      myFun();
+      console.log(a);
+      console.log(b);
+      console.log(c);
+      console.log(d);
+      console.log(e);
+    </script>
+  </body>
+</html>

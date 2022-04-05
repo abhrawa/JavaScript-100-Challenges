@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   Step 1- Take the input through function
+      //   Step 2- Create a variable and assign 0 in it.
+      //   Step 3- Traverse the loop till input length.
+      //   Step 4- Apply condition to check no. of vowels in string.
+      //   Step 5- As numbers of vowels found increase the count.
+      //   Step 6- Return the result.
+      function inparr(inp) {
+        let count = 0;
+        for (i = 0; i <= inp.length; i++) {
+          if (
+            inp[i] == "a" ||
+            inp[i] == "e" ||
+            inp[i] == "i" ||
+            inp[i] == "o" ||
+            inp[i] == "u"
+          ) {
+            count++;
+
+            // console.log(newString);
+          }
+        }
+        return count;
+      }
+      console.log("Total Number of Vowels", inparr("abhisaeiouhek"));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Algo
+      //Step 1- Create a function and take the input.
+      //Step 2- Apply condition to check for String or NaN.
+      //Step 3- If Input is number then it will enter the loop.
+      //Step 3.1- New variable will be created with value 1 .
+      //Step 3.2- Loop will be tranverse upto the input number.
+      //Step 4- Inside loop ans will be multiplied with each transverse value.
+      //Step 5- Result will assign to the same variable.
+      //Step 6- It will return to the function and console it.
+
+      /**
+       * Step 1 - Handle input value
+       * Step 1.1 - If falsy or invalid then return error message
+       * Step 2 - Declare a result variable with 1
+       * Step 3 - Take input & loop upto that input
+       * Step 4 - Multiply input with result & continue i.e result = result * i
+       * Step 5 - Return result
+       */
+      function factorial(num) {
+        if (isNaN(num) || !num) return "Please  enter the valid number";
+        let ans = 1;
+        for (let i = num; i >= 1; i--) {
+          ans = ans * i;
+        }
+        return ans;
+      }
+      console.log(factorial(12));
+    </script>
+  </body>
+</html>
