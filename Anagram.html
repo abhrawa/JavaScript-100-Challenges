@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function anagram(strng1, strng2) {
+        const str1 = strng1.split("").sort().join("");
+        const str2 = strng2.split("").sort().join("");
+
+        if (str1 === str2) {
+          return "number is anagram";
+        } else {
+          return "not anagram";
+        }
+      }
+
+      console.log(anagram("cat", "act"));
+    </script>
+  </body>
+</html>
