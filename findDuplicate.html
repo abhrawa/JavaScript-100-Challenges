@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function findDuplicate(strng) {
+        let arr = [];
+        const myArray = strng.split("");
+        for (let i = 0; i < myArray.length; i++) {
+          for (let j = i + 1; j < myArray.length; j++) {
+            const a = myArray[i];
+            const b = myArray[j];
+            if (a === b) {
+              arr.push(a);
+              break;
+            }
+          }
+        }
+        return arr;
+      }
+      console.log(findDuplicate("Shunnu"));
+    </script>
+  </body>
+</html>

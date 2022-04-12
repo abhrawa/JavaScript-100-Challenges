@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var obj = {
+        a: {
+          b: {
+            c: 12,
+            j: false,
+          },
+          k: null,
+        },
+      };
+      const findPath = (object, path) => {
+        for (let i = 0; i < object.length; i++) {
+          if (object.hasOwnProperty(object[i].path)) return object[i];
+        }
+        return object;
+      };
+
+      console.log(findPath(obj, "a.b.c")); // 12
+      console.log(findPath(obj, "a.b")); // {c: 12, j: false}
+      console.log(findPath(obj, "a.b.d")); // undefined
+      console.log(findPath(obj, "a.c")); // undefined
+      console.log(findPath(obj, "a.b.c.d")); // undefined
+      console.log(findPath(obj, "a.b.c.d.e")); // undefined
+      console.log(findPath(obj, "a.b.j")); //false
+      console.log(findPath(obj, "a.b.j.k")); //undefined
+      console.log(findPath(obj, "a.k")); //null
+    </script>
+  </body>
+</html>

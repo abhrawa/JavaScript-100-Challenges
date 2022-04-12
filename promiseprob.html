@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   function job() {
+      //     return new Promise(function (resolve, reject) {
+      //       resolve();
+      //     });
+      //   }
+      //   let promise = job();
+
+      //   promise
+      //     .then(function () {
+      //       console.log("Success 1");
+      //     })
+      //     .then(function () {
+      //       console.log("Success 2");
+      //     })
+      //     .then(function () {
+      //       console.log("Success 3");
+      //     })
+      //     .catch(function () {
+      //       console.log("Error 1");
+      //     });
+      //   function job() {
+      //     return new Promise(function (resolve, reject) {
+      //       resolve();
+      //     });
+      //   }
+      //   let promise = job();
+      //   promise
+      //     .then(function () {
+      //       console.log("Success 1");
+      //     })
+      //     .then(function () {
+      //       console.log("Success 2");
+      //     })
+      //     .then(function () {
+      //       console.log("Success 3");
+      //       throw new Error("An error occured");
+      //     })
+      //     .catch(function () {
+      //       console.log("Error 2");
+      //     })
+      //     .catch(function () {
+      //       console.log("Error 1");
+      //     })
+      //     .then(function () {
+      //       console.log("Success 4");
+      //     })
+      //     .then(function () {
+      //       console.log("Success 4");
+      //     })
+
+      //     .then(function () {
+      //       console.log("Success 4");
+      //     })
+      //     .then(function () {
+      //       console.log("Success 4");
+      //     });
+
+      //   function job(state) {
+      //     return new Promise(function (resolve, reject) {
+      //       if (state) {
+      //         resolve("success");
+      //       } else {
+      //         reject("error");
+      //       }
+      //     });
+      //   }
+      //   let promise = job(true);
+      //   promise
+      //     .then(function (data) {
+      //       console.log("line-80", data);
+      //       return job(false);
+      //     })
+      //     .catch(function (error) {
+      //       console.log("Line-84", error);
+      //       return { _name: "Deepshikha" };
+      //     })
+      //     .then(function (data) {
+      //       console.log("Line-88", data);
+      //       return job(true);
+      //     })
+      //     .then(function (error) {
+      //       console.log("Line-92", error);
+      //     });
+
+      //   var p = new Promise((resolve, reject) => {
+      //     reject(Error("The Fails!"));
+      //   });
+      //   p.catch((error) => console.log(error.message));
+      //   p.catch((error) => console.log(error.message));
+
+      //   var p = new Promise((resolve, reject) => {
+      //     return Promise.reject(Error("The Fails!")).catch((error) =>
+      //       reject(error)
+      //     );
+      //   });
+      //   p.catch((error) => console.log(error.message));
+      //   p.catch((error) => console.log(error.message));
+
+      //   var p = new Promise((resolve, reject) => {
+      //     return Promise.resolve(Error("The Fails!")).then((data) =>
+      //       resolve(data)
+      //     );
+      //   });
+      //   p.then((error) => console.log(error.message));
+      //   p.catch((error) => console.log(error.message));
+
+      var p = new Promise((resolve, reject) => {
+        reject(Error("The Fails!"));
+      })
+        .catch((error) => {
+          //   console.log(error.message);
+          //   return error;
+        })
+        .catch((error) => console.log(error.message));
+      p.then((data) => console.log("Line-125", data)).catch((error) =>
+        console.log("Line-126", error)
+      );
+    </script>
+  </body>
+</html>

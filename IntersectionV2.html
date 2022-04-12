@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Step 1- Take the two array input using function.
+      //Step 2- Create a loop on first array.
+      //Step 3- Create a nested loop for second array.
+      //Step 4- Iterate and check for each element in 2nd array.
+      //Step 5- it match found then store it in another array and returnd the same.
+      const arr1 = [1, 2, 3, 4, 7, 8, 9];
+      const arr2 = [1, 5, 9, 4, 7, 8, 6];
+      function intersectionV2(arry1, arry2) {
+        let objnew = {};
+        const arr3 = [];
+        for (let i = 0; i < arry1.length; i++) {
+          for (let j = 0; j < arry2.length; j++) {
+            if (arry1[i] === arr2[j]) {
+              arr3.push(arry2[j]);
+              arr2.splice(j, 1);
+              console.log(arr2);
+              objnew[arry1[i]] = true;
+              break;
+            }
+          }
+        }
+        return objnew;
+      }
+      console.log(intersectionV2(arr1, arr2));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const arry1 = [1, 2, 3, 4, 5, 6, 7];
+      const arry2 = [2, 77, 3, 78];
+      let result = {};
+
+      function findUnion(arr, brr) {
+        for (let i = 0; i < brr.length; i++) {
+          arr.push(brr[i]);
+        }
+        for (let j = 0; j < arr.length; j++) {
+          if (result.hasOwnProperty(arr[j])) continue;
+          result[arr[j]] = true;
+        }
+        return result;
+      }
+      console.log(findUnion(arry1, arry2));
+    </script>
+  </body>
+</html>

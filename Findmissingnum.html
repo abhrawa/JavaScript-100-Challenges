@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Missing Number</title>
+  </head>
+  <body></body>
+  <script>
+    let arr = [3, 0, 1];
+
+    function addarray(arrelem) {
+      let arrSum = 0;
+      let indexSum = 0;
+      for (let i = 0; i <= arr.length; i++) {
+        if (arr[i]) {
+          arrSum = arrSum + arr[i];
+        }
+        indexSum = indexSum + i;
+      }
+      const results = indexSum - arrSum;
+      return results;
+    }
+    console.log(addarray(arr));
+
+    function addarray(arrelem) {
+      let arrSum = 0;
+      let indexSum = 0;
+      for (let i = 0; i < arr.length; i++) {
+        arrSum = arrSum + arr[i];
+        indexSum = indexSum + i + 1;
+      }
+      const results = indexSum - arrSum;
+      return results;
+    }
+    console.log(addarray(arr));
+  </script>
+</html>
